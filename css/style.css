@@ -1,0 +1,311 @@
+/* =================== section there ======================== */
+@import url(section-there.css);
+@import url(section-4r.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* Main css الأكثر إستعمالا */
+:root {
+    --btn-color: #ccc;
+    --blue: #253342;
+    --gray: #f2f4f4;
+    --margin: 50px 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cont {
+    padding: 0 15px;
+}
+
+/* header */
+header {
+    height: 60px;
+    background-color: var(--blue);
+    line-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header>div h2 a {
+    cursor: pointer;
+    color: var(--btn-color);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header>div h2 a:hover {
+    color: var(--gray);
+}
+
+header .heder-nav ul {
+    list-style: none;
+}
+
+header .heder-nav ul li {
+    display: inline-block;
+}
+
+header .heder-nav ul li a {
+    padding: 10px 20px;
+    color: var(--btn-color);
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+header .heder-nav ul li a:focus, .heder-nav ul a:hover {
+    transition: 0.5s ease-in-out;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+/* ====================media heder==================== */
+@media(max-width:690px) {
+    header {
+        height: 120px;
+        line-height: 60px;
+        display: block;
+        text-align: center;
+    }
+
+    header .heder-nav ul li a {
+        padding: 0px 10px;
+        line-height: 60px;
+        color: var(--btn-color);
+        font-size: 20px;
+        font-weight: normal;
+
+    }
+
+}
+
+/* <!-- =================== section one ======================== --> */
+
+.section-one {
+    background-image: url(../imgs/imh-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: left;
+    width: 100%;
+    height: 450px;
+}
+
+@media(max-width:690px) {
+    .section-one {
+        background-image: url(../imgs/imh-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: center;
+        width: 100%;
+        height: 450px;
+    }
+}
+
+/* =================== section two ========================  */
+
+.section-two {
+    text-align: center;
+    margin: var(--margin);
+}
+
+.section-two h2, p, button {
+    margin-bottom: 20px;
+}
+
+.section-two p {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.section-two p a {
+    text-decoration-line: underline;
+    font-style: italic;
+}
+
+.section-two button {
+    padding: 15px 20px;
+    border-radius: 15px;
+    line-height: 15px;
+    background-color: var(--blue);
+    color: var(--gray);
+    font-size: 15px;
+    border: none;
+    box-shadow: -1px 5px 3px var(--btn-color);
+}
+
+.section-two button:hover {
+    transform: translatey(-5px);
+    background-color: var(--btn-color);
+    color: black;
+    transition: .5s ease-in-out;
+}
+
+@media(max-width:690px) {
+    .section-two {
+        margin: 30px 0;
+    }
+
+    .section-two h2, p, button {
+        margin-bottom: 10px;
+    }
+
+    .section-two p {
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 19px;
+    }
+}
+
+/* =================== من هنا نبدأ ========================  */
+
+
+/* =================== footer========================  */
+footer {
+    line-height: 40px;
+    text-align: center;
+    background-color: var(--blue);
+    height: max-content;
+    font-style: italic;
+    color: snow;
+    font-size: 1.5rem;
+}
+
+footer a {
+    color: rgb(247, 205, 169);
+
+
+}
+
+footer span {
+    color: rgb(247, 205, 169);
+}
+
+/* //////////////////////////////// */
+.youtube {
+    text-align: center;
+}
+
+.youtube h2 {
+    padding: 30px 0;
+}
+
+.youtube .v {
+    width: 60%;
+    margin: 0 auto;
+    min-height: 400px;
+    padding-bottom: 30px;
+}
+
+@media(max-width:700px) {
+    .youtube .v {
+        width: 100%;
+        min-height: 300px;
+    }
+
+}
+
+/* //////////////////////////////// */
+.con {
+    text-align: center;
+    padding: 30px 0;
+    background-color: var(--btn-color);
+}
+
+.con h2 {
+    padding-bottom: 30px;
+}
+
+.con .flex-b {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
+}
+
+.con img {
+    height: 300px;
+    /* width: 100%; */
+}
+
+.con .d1 {
+    width: 30%;
+}
+
+.con .btn {
+    font-weight: bold;
+
+    transition: .5s ease-in-out;
+    border-radius: 10px;
+    border-style: none;
+    padding: 5px 7px;
+}
+
+.con .btn:hover {
+    padding: 10px 13px;
+}
+
+.input {
+    font-weight: bold;
+
+    padding: 5px;
+    margin: 10px 0;
+    width: 100%;
+    transition: .5s ease-in-out;
+    border-radius: 15px;
+    border-style: none;
+    background-color: ivory;
+
+}
+
+.input:hover {
+    border: 3px solid rgb(60, 64, 247, .5);
+    cursor: pointer;
+}
+
+.d2 .map {
+    /* border: 2px solid salmon; */
+    height: 300px;
+    margin-left: 10px;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+    width: 100%;
+}
+
+.d2 .map:hover {
+    filter: invert(100%);
+
+}
+
+@media(max-width:640px) {
+    .con .w {
+        width: 70%;
+    }
+
+    .con img {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+input[type="text,email"] {
+    font-size: 15px;
+}
